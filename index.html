@@ -1,18 +1,65 @@
-<!DOCTYPE html>
+DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>My First Webpage</title>
+    <meta charset="utf-8">
+    <title>Monster Report</title>
 </head>
 <body>
+    <h1>Mini Site 1: Team KJ</h1>
+    <h2>by John Jones & Kenyce Holloman</h2>
+    <p>This website is a simple example created to demonstrate basic HTML structure, focusing on reporting the creatures you encounter (based on the game series "Monster Hunter").</p>
+    <p>This is a Kenyce and John collaboration!</p>
+   
+    <h3>John & Kenyce's Favorite Things</h3>
+    <ol>
+        <li>Kenyce</li>
+        <li>Monster Hunter</li>
+        <li>Fly Fishing</li>
+    </ol>
 
-    <h1>Welcome to My Webpage</h1>
+    <a href="https://www.google.com" target="_blank">this is an external link.</a>
+    <br>
+    <a href="https://monsterhunter.fandom.com/wiki/Lagiacrus">Visit THIS website to learn more about John's favorite creature!</a>
+    <br>
+    <img src="https://static.wikia.nocookie.net/monsterhunter/images/b/b0/MH3U-Lagiacrus_Render_001.png" alt="Lagiacrus Render" width="250">
 
-    <p>
-        Hello! My name is [Your Name]. I am a Computer Information Systems student
-        who is learning HTML and web development. This webpage is my first step
-        toward building professional and user-friendly websites.
-    </p>
 
+  <p>Sign up to record the monsters YOU encounter!</p>
+    <form method="post" action="#">
+        <div>
+            <b><label for="firstName">Name</label></b><br>
+            <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+            <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+        </div><br>
+
+        <div>
+            <b><label for="password">Guild Access Code</label></b><br>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+        </div>
+
+        <p><b>Have you encountered a monster as of late?</b></p>
+        <input type="checkbox" name="encountered" id="encountered" value="yes"> <label for="encountered">Yes</label><br>
+
+        <p><b>Did you engage with it?</b></p>
+        <input type="checkbox" name="engaged" id="engaged" value="yes"> <label for="engaged">Yes</label><br>
+
+        <p><b>What was this monster's classification?</b></p>
+        <select name="monsterType" id="monsterType">
+            <option value="flyingWyvern">Flying Wyvern</option>
+            <option value="cephalopod">Cephalopod</option>
+            <option value="leviathan">Leviathan</option>
+            <option value="amphibian">Amphibian</option>
+            <option value="insect">Insect</option>
+            <option value="elderDragon">Elder Dragon</option>
+        </select>
+
+        <p><b>Based on your encounter, what was this monster's threat level?</b></p>
+        <input type="radio" name="threat" value="low"> Low
+        <input type="radio" name="threat" value="medium"> Medium
+        <input type="radio" name="threat" value="high"> High
+        <input type="radio" name="threat" value="apocalyptic"> Apocalyptic<br><br>
+
+        <input type="submit" value="Submit Report">
+    </form>
 </body>
 </html>
