@@ -2,105 +2,131 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Monster Report</title>
+    <title>MLP Card Collection</title>
 </head>
+
 <body>
-    <h1>Mini Site 1: Team KJ</h1>
-    <h2>by John Jones & Kenyce Holloman</h2>
-    <p>This website is a simple example created to demonstrate basic HTML structure, focusing on reporting the creatures you encounter (based on the game series "Monster Hunter").</p>
-    <p>This is a Kenyce and John collaboration!</p>
-   
-    <h3>John & Kenyce's Favorite Things</h3>
+
+    <h1>My Little Pony Card Collection</h1>
+    <h2>By : Kenyce Holloman</h2>
+
+    <p>
+        This website is a simple example created to demonstrate basic HTML structure.
+        It focuses on organizing My Little Pony trading cards and their rarity types.
+    </p>
+
+    <p>This is a Kenyce Holloman product!</p>
+
+    <h3>Favorite Card Types</h3>
     <ol>
-        <li>Kenyce</li>
-        <li>Monster Hunter</li>
-        <li>Fly Fishing</li>
+        <li>Alicorns</li>
+        <li>Pegasus Ponies</li>
+        <li>Legendary Cards</li>
     </ol>
 
-    <a href="https://www.google.com" target="_blank">this is an external link.</a>
+ 
     <br>
-    <a href="https://monsterhunter.fandom.com/wiki/Lagiacrus">Visit THIS website to learn more about John's favorite creature!</a>
+
+    <a href="https://mlp.fandom.com">Visit this website to learn more about My Little Pony!</a>
     <br>
-    <img src="https://static.wikia.nocookie.net/monsterhunter/images/b/b0/MH3U-Lagiacrus_Render_001.png" alt="Lagiacrus Render" width="250">
-    
+
+    <img src="https://tradingcardarchives.com/wp-content/uploads/2023/04/YH-F02-005.jpg"
+         alt="Fluttershy SSR Card"
+         width="250">
+
     <table border="2">
         <thead>
             <tr>
-                <th>Name</th>
-                <th>Color</th>
-                <th>Type</th>
+                <th>Pony Name</th>
+                <th>Pony Type</th>
+                <th>Rarity</th>
+                <th>Box Set Type</th>
             </tr>
         </thead>
+
         <tbody>
             <tr>
-                <td>Rathalos</td>
-                <td>Red</td>
-                <td>Flying Wyvern</td>
+                <td>Twilight Sparkle</td>
+                <td>Alicorn</td>
+                <td>SR</td>
             </tr>
             <tr>
-                <td>Gore Magala</td>
-                <td>Black</td>
-                <td>Demi Elder Dragon</td>
+                <td>Rainbow Dash</td>
+                <td>Pegasus</td>
+                <td>HR</td>
             </tr>
             <tr>
-                <td>Lagiacrus</td>
-                <td>Blue</td>
-                <td>Leviathan</td>
+                <td>Princess Luna</td>
+                <td>Alicorn</td>
+                <td>SSR</td>
             </tr>
             <tr>
-                <td>Fatalis</td>
-                <td>Black</td>
-                <td>Apocalyptic Elder Dragon</td>
+                <td>Discord</td>
+                <td>Draconequus</td>
+                <td>UR</td>
             </tr>
         </tbody>
+
         <tfoot>
             <tr>
-                <td colspan="3">Total Entries: 4</td>
+                <td colspan="3">Total Cards: 4</td>
             </tr>
         </tfoot>
     </table>
 
-  <p>Sign up to record the monsters YOU encounter!</p>
+    <p>Sign up to record the MLP cards YOU collect!</p>
+
     <form method="post" action="#">
+
         <div>
             <b><label for="firstName">Name</label></b><br>
             <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
             <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
-        </div><br>
-
-         <div>
-            <b><label for="email">Email Address</label></b><br>
-            <input type="text" id="email" name="email" placeholder="Email" required>
-        </div><br>
+        </div>
+        <br>
 
         <div>
-            <b><label for="password">Guild Access Code</label></b><br>
+            <b><label for="email">Email Address</label></b><br>
+            <input type="text" id="email" name="email" placeholder="Email" required>
+        </div>
+        <br>
+
+        <div>
+            <b><label for="password">Collector Password</label></b><br>
             <input type="password" id="password" name="password" placeholder="Password" required>
         </div>
 
-        <p><b>Have you encountered a monster as of late?</b></p>
-        <input type="checkbox" name="encountered" id="encountered" value="yes"> <label for="encountered">Yes</label><br>
+        <p><b>Did you collect a new card recently?</b></p>
+        <input type="checkbox" name="collected" id="collected" value="yes">
+        <label for="collected">Yes</label>
+        <br>
 
-        <p><b>Did you engage with it?</b></p>
-        <input type="checkbox" name="engaged" id="engaged" value="yes"> <label for="engaged">Yes</label><br>
+        <p><b>Was it a favorite card?</b></p>
+        <input type="checkbox" name="favorite" id="favorite" value="yes">
+        <label for="favorite">Yes</label>
+        <br>
 
-        <p><b>What was this monster's classification?</b></p>
-        <select name="monsterType" id="monsterType">
-            <option value="flyingWyvern">Flying Wyvern</option>
-            <option value="cephalopod">Cephalopod</option>
-            <option value="leviathan">Leviathan</option>
-            <option value="amphibian">Amphibian</option>
-            <option value="insect">Insect</option>
-            <option value="elderDragon">Elder Dragon</option>
+        <p><b>What type of pony is on the card?</b></p>
+        <select name="ponyType" id="ponyType">
+            <option value="earth">Earth Pony</option>
+            <option value="pegasus">Pegasus</option>
+            <option value="unicorn">Unicorn</option>
+            <option value="alicorn">Alicorn</option>
+            <option value="other">Other</option>
         </select>
 
-        <p><b>Based on your encounter, what was this monster's threat level?</b></p>
-        <input type="radio" name="threat" value="low"> Low
-        <input type="radio" name="threat" value="medium"> Medium
-        <input type="radio" name="threat" value="high"> High
-        <input type="radio" name="threat" value="apocalyptic"> Apocalyptic<br><br>
+        <p><b>What is the card rarity?</b></p>
+        <input type="radio" name="rarity" value="r"> R
+        <input type="radio" name="rarity" value="hr"> HR
+        <input type="radio" name="rarity" value="sr"> SR
+        <input type="radio" name="rarity" value="ssr"> SSR
+        <input type="radio" name="rarity" value="ur"> UR
+        <input type="radio" name="rarity" value="lsr"> LSR
+        <input type="radio" name="rarity" value="sgr"> SGR
+        <br><br>
 
-        <input type="submit" value="Submit Report">
+        <input type="submit" value="Submit Card">
     </form>
+   <a href="https://www.google.com" target="_blank">This is an external link.</a>
 </body>
 </html>
