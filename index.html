@@ -3,131 +3,65 @@
 <head>
     <meta charset="utf-8">
     <title>MLP Card Collection</title>
-
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <h1>My Little Pony Card Collection</h1>
-    <h2>By : Kenyce Holloman</h2>
+    <div class="container">
+        <header id="main-header">
+            <h1>My Little Pony Card Collection</h1>
+            <h2>By: Kenyce Holloman</h2>
+        </header>
 
-    <p>
-        This website is a simple example created to demonstrate basic HTML structure.
-        It focuses on organizing My Little Pony trading cards and their rarity types.
-    </p>
+        <p class="intro-text">
+            Welcome to the ultimate MLP gallery! This project demonstrates modern 
+            layout techniques while organizing rare trading cards and rarity types.
+        </p>
 
-    <p>This is a Kenyce Holloman product!</p>
+        <main>
+            <section class="featured-content">
+                <div class="image-box">
+                    <h3>Featured Card</h3>
+                    <img src="https://tradingcardarchives.com/wp-content/uploads/2023/04/YH-F02-005.jpg" alt="Fluttershy SSR Card">
+                </div>
 
-    <h3>Favorite Card Types</h3>
-    <ol>
-        <li>Alicorns</li>
-        <li>Pegasus Ponies</li>
-        <li>Legendary Cards</li>
-    </ol>
+                <div class="table-box">
+                    <h3>Collection Stats</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Pony Name</th>
+                                <th>Type</th>
+                                <th>Rarity</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Twilight Sparkle</td><td>Alicorn</td><td>SR</td></tr>
+                            <tr><td>Rainbow Dash</td><td>Pegasus</td><td>HR</td></tr>
+                            <tr><td>Princess Luna</td><td>Alicorn</td><td>SSR</td></tr>
+                            <tr><td>Discord</td><td>Draconequus</td><td>UR</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
 
- 
-    <br>
+            <section class="form-section">
+                <h3>Submit a New Find</h3>
+                <form method="post" action="#">
+                    <div class="input-group">
+                        <input type="text" placeholder="First Name" required>
+                        <input type="text" placeholder="Last Name" required>
+                    </div>
+                    <input type="email" placeholder="Email Address" required>
+                    <input type="submit" value="Add to Collection">
+                </form>
+            </section>
+        </main>
 
-    <a href="https://mlp.fandom.com">Visit this website to learn more about My Little Pony!</a>
-    <br>
+        <footer>
+            <a href="https://mlp.fandom.com" target="_blank">Learn more at the MLP Wiki</a>
+        </footer>
+    </div>
 
-    <img src="https://tradingcardarchives.com/wp-content/uploads/2023/04/YH-F02-005.jpg"
-         alt="Fluttershy SSR Card"
-         width="250">
-
-    <table border="2">
-        <thead>
-            <tr>
-                <th>Pony Name</th>
-                <th>Pony Type</th>
-                <th>Rarity</th>
-                <th>Box Set Type</th>
-            </tr>
-        </thead>
-
-        <tbody>
-            <tr>
-                <td>Twilight Sparkle</td>
-                <td>Alicorn</td>
-                <td>SR</td>
-            </tr>
-            <tr>
-                <td>Rainbow Dash</td>
-                <td>Pegasus</td>
-                <td>HR</td>
-            </tr>
-            <tr>
-                <td>Princess Luna</td>
-                <td>Alicorn</td>
-                <td>SSR</td>
-            </tr>
-            <tr>
-                <td>Discord</td>
-                <td>Draconequus</td>
-                <td>UR</td>
-            </tr>
-        </tbody>
-
-        <tfoot>
-            <tr>
-                <td colspan="3">Total Cards: 4</td>
-            </tr>
-        </tfoot>
-    </table>
-
-    <p>Sign up to record the MLP cards YOU collect!</p>
-
-    <form method="post" action="#">
-
-        <div>
-            <b><label for="firstName">Name</label></b><br>
-            <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
-            <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
-        </div>
-        <br>
-
-        <div>
-            <b><label for="email">Email Address</label></b><br>
-            <input type="text" id="email" name="email" placeholder="Email" required>
-        </div>
-        <br>
-
-        <div>
-            <b><label for="password">Collector Password</label></b><br>
-            <input type="password" id="password" name="password" placeholder="Password" required>
-        </div>
-
-        <p><b>Did you collect a new card recently?</b></p>
-        <input type="checkbox" name="collected" id="collected" value="yes">
-        <label for="collected">Yes</label>
-        <br>
-
-        <p><b>Was it a favorite card?</b></p>
-        <input type="checkbox" name="favorite" id="favorite" value="yes">
-        <label for="favorite">Yes</label>
-        <br>
-
-        <p><b>What type of pony is on the card?</b></p>
-        <select name="ponyType" id="ponyType">
-            <option value="earth">Earth Pony</option>
-            <option value="pegasus">Pegasus</option>
-            <option value="unicorn">Unicorn</option>
-            <option value="alicorn">Alicorn</option>
-            <option value="other">Other</option>
-        </select>
-
-        <p><b>What is the card rarity?</b></p>
-        <input type="radio" name="rarity" value="r"> R
-        <input type="radio" name="rarity" value="hr"> HR
-        <input type="radio" name="rarity" value="sr"> SR
-        <input type="radio" name="rarity" value="ssr"> SSR
-        <input type="radio" name="rarity" value="ur"> UR
-        <input type="radio" name="rarity" value="lsr"> LSR
-        <input type="radio" name="rarity" value="sgr"> SGR
-        <br><br>
-
-        <input type="submit" value="Submit Card">
-    </form>
-   <a href="https://www.google.com" target="_blank">This is an external link.</a>
 </body>
 </html>
